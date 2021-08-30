@@ -1,0 +1,21 @@
+<div class="content" style="width: 80%;">
+    <h2>Login</h2>
+    <div class="">
+      <form [formGroup]="form" (ngSubmit)="submit()">
+  
+        <div class="form-group">
+          <input
+            formControlName="email"
+            id="email"
+            type="email"
+            class="form-control">
+          <div *ngIf="f.email.touched && f.email.invalid" class="alert alert-danger">
+            <div *ngIf="f.email.errors?.required">email is required.</div>
+          </div>
+        </div>
+        <br>
+        <button class="btn btn-primary" type="submit" [disabled]="!form.valid">Submit</button>
+      </form>
+    </div>
+  </div>
+
