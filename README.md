@@ -1,6 +1,7 @@
 # AngularTechTest
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.2.
+Download the code
+go to src folder and run the npm install command 
 
 ## Development server
 
